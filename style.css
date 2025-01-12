@@ -11,24 +11,54 @@ body {
 .container {
     width: 90%; /* Slightly increased for more space on smaller screens */
     max-width: 1000px; /* Set a maximum width to avoid stretching on large screens */
-    margin: 10px;
+    margin: 0 auto; /* Center the content */
+    padding: 0 20px; /* Add some padding for better spacing */
 }
 
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px 0; /* Reduced padding */
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 8px; /* Reduced margin between items */
+}
+
+/* Sections */
+.section {
+    padding: 40px 0; /* Reduced padding for smaller sections */
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+.section:nth-child(even) {
+    background-color: #f9f9f9;
+}
 
 h1, h2, h3 {
     color: #4CAF50;
 }
+
 /* Ensure consistent font sizes */
 h1 {
-    font-size: 2.5em;
+    font-size: 2em; /* Smaller h1 size */
 }
 
 h2 {
-    font-size: 2em;
+    font-size: 1.75em; /* Smaller h2 size */
 }
 
 h3 {
-    font-size: 1.5em;
+    font-size: 1.25em; /* Smaller h3 size */
 }
 
 a {
@@ -40,59 +70,30 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Header */
-header {
-    background-color: #333;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-}
-
-header nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-header nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-/* Sections */
-.section {
-    padding: 60px 0;
-    background-color: #fff;
-    margin-bottom: 20px;
-}
-
-.section:nth-child(even) {
-    background-color: #f9f9f9;
-}
-
+/* Project Section Styling */
 .project-list {
     display: block;
-/*     flex-wrap: wrap; */
-    gap: 20px;
+    gap: 15px; /* Reduced gap between projects */
 }
 
 .project {
     background-color: #e3e3e3;
-    padding: 20px;
+    padding: 15px; /* Reduced padding */
     border-radius: 8px;
-    width: 90%; /* Ensure project takes up the full width */
-    margin-bottom: 20px; /* Add space between project items */
+    width: 100%; /* Ensure project takes up the full width */
+    margin-bottom: 15px; /* Reduced space between project items */
 }
 
 .project a {
     display: inline-block;
-    margin-top: 10px;
+    margin-top: 8px; /* Reduced margin */
 }
 
 /* Footer */
 footer {
     background-color: #333;
     color: white;
-    padding: 20px 0;
+    padding: 15px 0; /* Reduced padding */
     text-align: center;
 }
 
