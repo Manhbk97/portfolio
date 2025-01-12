@@ -10,8 +10,8 @@ body {
 
 .container {
     width: 90%; /* Slightly increased for more space on smaller screens */
-    max-width: 1200px; /* Set a maximum width to avoid stretching on large screens */
-    margin: 0 auto;
+    max-width: 1000px; /* Set a maximum width to avoid stretching on large screens */
+    margin: 10px;
 }
 
 
