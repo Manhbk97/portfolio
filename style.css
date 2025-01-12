@@ -79,7 +79,7 @@ header nav ul li {
     background-color: #e3e3e3;
     padding: 20px;
     border-radius: 8px;
-    width: 80%; /* Ensure project takes up the full width */
+    width: 90%; /* Ensure project takes up the full width */
     margin-bottom: 20px; /* Add space between project items */
 }
 
