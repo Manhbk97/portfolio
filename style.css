@@ -50,15 +50,15 @@ h1, h2, h3 {
 
 /* Ensure consistent font sizes */
 h1 {
-    font-size: 2em; /* Smaller h1 size */
+    font-size: 1.75em; /* Smaller h1 size */
 }
 
 h2 {
-    font-size: 1.75em; /* Smaller h2 size */
+    font-size: 1.5em; /* Smaller h2 size */
 }
 
 h3 {
-    font-size: 1.25em; /* Smaller h3 size */
+    font-size: 1.0em; /* Smaller h3 size */
 }
 
 a {
