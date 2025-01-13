@@ -44,7 +44,7 @@ header nav ul li {
     background-color: #f9f9f9;
 }
 
-h2, h3 {
+h2, h3, h4 {
 /*     color: #4CAF50; */
     color: #000;
 }
@@ -61,6 +61,9 @@ h2 {
 
 h3 {
     font-size: 1.0em; /* Smaller h3 size */
+}
+h4 {
+    font-size: 0.8em; /* Smaller h3 size */
 }
 
 a {
