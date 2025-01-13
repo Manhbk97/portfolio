@@ -44,7 +44,7 @@ header nav ul li {
     background-color: #f9f9f9;
 }
 
-h1, h2, h3 {
+h2, h3 {
 /*     color: #4CAF50; */
     color: #000;
 }
@@ -52,6 +52,7 @@ h1, h2, h3 {
 /* Ensure consistent font sizes */
 h1 {
     font-size: 1.75em; /* Smaller h1 size */
+    color: #4CAF50; 
 }
 
 h2 {
