@@ -85,6 +85,14 @@ a:hover {
     margin-bottom: 15px; /* Reduced space between project items */
 }
 
+
+.project-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
 .project a {
     display: inline-block;
     margin-top: 8px; /* Reduced margin */
