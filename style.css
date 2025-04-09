@@ -53,6 +53,21 @@ header nav ul li a.active {
     font-weight: bold;
 }
 
+header nav ul li a.cv-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+header nav ul li a.cv-button:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
 /* Sections */
 .section {
     padding: 40px 0; /* Reduced padding for smaller sections */
@@ -181,6 +196,39 @@ footer {
 
 footer p {
     margin: 0;
+}
+
+/* CV Download Section */
+.cv-download-section {
+    margin-top: 25px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.cv-download-btn {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 4px;
+    margin-top: 10px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.cv-download-btn:hover {
+    background-color: #45a049;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-decoration: none;
+    color: white;
+}
+
+.cv-download-btn i {
+    margin-right: 8px;
 }
 
 /* Social Links */
