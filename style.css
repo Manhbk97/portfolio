@@ -179,6 +179,19 @@ a:hover {
     h2 {
         font-size: 1.3em;
     }
+    
+    .profile-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .profile-content {
+        text-align: left;
+    }
+    
+    .cv-download-section {
+        text-align: center;
+    }
 }
 
 .project-videos h4 {
@@ -198,14 +211,43 @@ footer p {
     margin: 0;
 }
 
+/* Profile Container */
+.profile-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+    margin: 20px 0;
+}
+
+.profile-image {
+    flex: 0 0 200px;
+}
+
+.profile-content {
+    flex: 1;
+    min-width: 300px;
+}
+
+.avatar {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.avatar:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
 /* CV Download Section */
 .cv-download-section {
     margin-top: 25px;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    text-align: left;
 }
 
 .cv-download-btn {
