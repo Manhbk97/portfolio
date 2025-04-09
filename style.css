@@ -20,18 +20,18 @@ body {
 header {
     background-color: #2c3e50;
     color: white;
-    padding: 20px 0;
+    padding: 15px 0;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .header-content {
     display: flex;
     align-items: center;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 .header-left {
-    margin-right: 20px;
+    margin-right: 15px;
 }
 
 .header-right {
@@ -39,19 +39,31 @@ header {
     text-align: left;
 }
 
+.header-right h1 {
+    font-size: 1.5em;
+    margin: 0;
+    color: white;
+}
+
+.header-right p {
+    font-size: 0.9em;
+    margin: 5px 0 0;
+    opacity: 0.9;
+}
+
 .header-avatar {
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     object-fit: cover;
-    border: 3px solid white;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    border: 2px solid white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
 header nav ul {
     list-style: none;
     padding: 0;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
 header nav ul li {
@@ -61,9 +73,10 @@ header nav ul li {
 
 header nav ul li a {
     color: white;
-    padding: 5px 10px;
+    padding: 4px 8px;
     border-radius: 3px;
     transition: background-color 0.3s;
+    font-size: 0.9em;
 }
 
 header nav ul li a:hover {
