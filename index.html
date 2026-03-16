@@ -3,340 +3,388 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tran Van Manh - Control and Robot Engineering</title>
+    <title>Tran Van Manh — Robotics Engineer</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-    <header>
-        <div class="container">
-            <div class="header-content">
-                <div class="header-left">
-                    <img src="image/avatar.jpg" alt="Tran Van Manh" class="header-avatar">
-                </div>
-                <div class="header-right">
-                    <h1>Tran Van Manh</h1>
-                    <p>Robotics Engineer | Software Developer | AI Enthusiast</p>
-                </div>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#patents">Patents</a></li>
-                    <li><a href="#publications">Publications</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+    <!-- NAV -->
+    <nav id="navbar">
+        <div class="nav-inner">
+            <span class="nav-logo">TVM</span>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle"><i class="fas fa-bars"></i></button>
         </div>
-    </header>
+    </nav>
 
+    <!-- HERO -->
+    <section id="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <img src="image/avatar.jpg" alt="Tran Van Manh" class="hero-avatar">
+            <p class="hero-greeting">Hello, I am</p>
+            <h1 class="hero-name">Tran Van Manh</h1>
+            <p class="hero-title">Robotics Engineer &nbsp;|&nbsp; Deep RL Researcher &nbsp;|&nbsp; Embedded Systems</p>
+            <div class="hero-btns">
+                <a href="CV/CV.pdf" target="_blank" class="btn btn-primary"><i class="fas fa-file-pdf"></i> Download CV</a>
+                <a href="#projects" class="btn btn-outline">View Projects</a>
+            </div>
+        </div>
+        <a href="#about" class="scroll-down"><i class="fas fa-chevron-down"></i></a>
+    </section>
+
+    <!-- ABOUT -->
     <section id="about" class="section">
         <div class="container">
-            <h2>About Me</h2>
-            
-            <div class="profile-content">
-                <p>Hi, I'm Tran Van Manh, a passionate robotics engineer with expertise in robot learning, control systems, and embedded systems. I love building intelligent machines learning system that solve real-world robotic problems. I have experience working with reinforcement learning algorithms, autonomous navigation systems, and deep learning.</p>
-                
-                <div class="cv-download-section">
-                    <a href="CV/CV.pdf" target="_blank" class="cv-download-btn">
-                        <i class="fas fa-file-pdf"></i> Download CV
-                    </a>
+            <div class="section-header">
+                <span class="section-tag">Who am I?</span>
+                <h2>A Roboticist Located on This Lovely Earth</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>Hi, I'm <strong>Tran Van Manh</strong>, a passionate robotics engineer with expertise in deep reinforcement learning, autonomous navigation, control systems, and embedded systems. I love building intelligent machines that solve real-world robotic challenges — from sim-to-real transfer to dynamic obstacle avoidance.</p>
+                    <p>I have hands-on experience developing RL-based navigation algorithms, conducting human-robot evaluations in industrial settings, and publishing research in IEEE Access and international conferences.</p>
+                    <div class="personal-info">
+                        <div class="info-item"><i class="fas fa-envelope"></i> manhtran4321@gmail.com</div>
+                        <div class="info-item"><i class="fas fa-map-marker-alt"></i>  Seoul, South Korea</div>
+                        <div class="info-item"><i class="fab fa-github"></i> <a href="https://github.com/Manhbk97" target="_blank">Manhbk97</a></div>
+                        <div class="info-item"><i class="fab fa-github"></i> <a href="https://github.com/Manh-RGT" target="_blank">Manh-RGT</a> (RGT)</div>
+                    </div>
+                </div>
+                <div class="expertise-cards">
+                    <div class="exp-card">
+                        <i class="fas fa-robot"></i>
+                        <h4>Robotics &amp; RL</h4>
+                        <p>DRL, ROS, Path Planning, Sim-to-Real</p>
+                    </div>
+                    <div class="exp-card">
+                        <i class="fas fa-brain"></i>
+                        <h4>Deep Learning</h4>
+                        <p>PyTorch, OpenAI Gym, CNN, Policy Networks</p>
+                    </div>
+                    <div class="exp-card">
+                        <i class="fas fa-microchip"></i>
+                        <h4>Embedded Systems</h4>
+                        <p>STM32, Arduino, PCB design</p>
+                    </div>
+                    <div class="exp-card">
+                        <i class="fas fa-sliders-h"></i>
+                        <h4>Control Systems</h4>
+                        <p>MPC, Backstepping, PID, Kalman Filter</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- STATS -->
+            <div class="stats-row">
+                <div class="stat-item">
+                    <span class="stat-num" data-target="6">0</span>
+                    <span class="stat-label">Years of Experience</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-num" data-target="6">0</span>
+                    <span class="stat-label">Publications</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-num" data-target="1">0</span>
+                    <span class="stat-label">Patent</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-num" data-target="5">0</span>
+                    <span class="stat-label">Major Projects</span>
                 </div>
             </div>
         </div>
     </section>
 
-
-    <section id="education" class="section">
+    <!-- RESUME -->
+    <section id="resume" class="section section-alt">
         <div class="container">
-            <h2>Education</h2>
-            <!--    <p>Long-life learning</p> -->
-            <ul class="education-list">
-                <li>
-                    <h3>Master of Science in Control and Robot Engineering</h3>                  
-                    <p><strong>Institution:</strong> Hanoi University of Science and Technology (HUST), Vietnam.</p>
-                    <p><strong>GPA:</strong> 4.19/4.5</p>
-                    <p><strong>Year:</strong> 2022 - 2024</p>
-                    <p><strong>Thesis: </strong> "Autonomous Navigation in Complex Environments Based on 
-                        Deep Reinforcement Learning Using Selective Policy Switching for Mobile Robot". 
-                    (<a href="https://drive.google.com/file/d/1sWH-L5Rt0OXTVSAt9LUzx_ztSKZfqvx6/view?usp=sharing" target="_blank">Thesis</a>
-                     <a href="https://drive.google.com/file/d/13d2cYjNoYdevWQlHcaSwFT-JKwaKx_Ir/view?usp=sharing" target="_blank">PPT</a>
-                        
-                        )</p>
-                </li>
-                <li>
-                    <h3>Bachelor of Control Engineering and Automation</h3>
-                    <p><strong>Institution:</strong> Hanoi University of Science and Technology (HUST), Vietnam.</p>
-                    <p><strong>GPA:</strong> 3.1/4.0</p>
-                    <p><strong>Thesis: </strong> "Design intelligent trajectory system for Omnidirectional Mobile Robot" - Best Graduation Thesis Defense </p>   
-                    <p><strong>Year:</strong> 2015 - 2020</p>
-                </li>
-            </ul>
+            <div class="section-header">
+                <span class="section-tag">Background</span>
+                <h2>Education &amp; Skills</h2>
+            </div>
+            <div class="resume-grid">
+                <div class="resume-col">
+                    <h3 class="resume-col-title"><i class="fas fa-graduation-cap"></i> Education</h3>
+                    <div class="timeline">
+                        <div class="tl-item">
+                            <div class="tl-dot"></div>
+                            <div class="tl-body">
+                                <span class="tl-year">2022 – 2024</span>
+                                <h4>M.Sc. Control and Robot Engineering</h4>
+                                <p class="tl-inst">Hanoi University of Science and Technology (HUST)</p>
+                                <p class="tl-gpa">GPA: 4.19 / 4.5</p>
+                                <p class="tl-thesis">Thesis: Autonomous Navigation in Complex Environments Based on Deep RL Using Selective Policy Switching &nbsp;
+                                    <a href="https://drive.google.com/file/d/1sWH-L5Rt0OXTVSAt9LUzx_ztSKZfqvx6/view?usp=sharing" target="_blank">[Thesis]</a>
+                                    <a href="https://drive.google.com/file/d/13d2cYjNoYdevWQlHcaSwFT-JKwaKx_Ir/view?usp=sharing" target="_blank">[PPT]</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tl-item">
+                            <div class="tl-dot"></div>
+                            <div class="tl-body">
+                                <span class="tl-year">2015 – 2020</span>
+                                <h4>B.Eng. Control Engineering and Automation</h4>
+                                <p class="tl-inst">Hanoi University of Science and Technology (HUST)</p>
+                                <p class="tl-gpa">GPA: 3.1 / 4.0</p>
+                                <p class="tl-thesis">🏆 Best Graduation Thesis Defense</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="resume-col">
+                    <h3 class="resume-col-title"><i class="fas fa-code"></i> Skills</h3>
+                    <div class="skills-group">
+                        <div class="skill-row">
+                            <span class="skill-label">Programming</span>
+                            <div class="skill-tags"><span>C++</span><span>Python</span><span>MATLAB</span><span>LaTeX</span></div>
+                        </div>
+                        <div class="skill-row">
+                            <span class="skill-label">ML &amp; Robotics</span>
+                            <div class="skill-tags"><span>Reinforcement Learning</span><span>Path Planning</span><span>Probabilistic Robotics</span></div>
+                        </div>
+                        <div class="skill-row">
+                            <span class="skill-label">Frameworks</span>
+                            <div class="skill-tags"><span>ROS</span><span>PyTorch</span><span>OpenCV</span><span>GTSAM</span><span>OpenAI</span></div>
+                        </div>
+                        <div class="skill-row">
+                            <span class="skill-label">Control</span>
+                            <div class="skill-tags"><span>Backstepping</span><span>MPC</span><span>PID</span><span>Kalman Filter</span></div>
+                        </div>
+                        <div class="skill-row">
+                            <span class="skill-label">Embedded</span>
+                            <div class="skill-tags"><span>ARM STM32</span><span>Arduino</span></div>
+                        </div>
+                        <div class="skill-row">
+                            <span class="skill-label">Simulation</span>
+                            <div class="skill-tags"><span>Gazebo</span><span>V-REP</span><span>Stage</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-
-
-    
+    <!-- PROJECTS -->
     <section id="projects" class="section">
         <div class="container">
-            <h2>Projects</h2>
-            <div class="project-list">
-                <div class="project">
-                    <h3>ATC-Mapless Navigation, March 2022 - Sep 2024 </h3>
-<!--                     <div class="project-image">
-                        <img src="project01/nana_env.png" alt="ATC-Mapless Navigation" />
-                    </div>  
-                    <div class="project-image">
-                        <img src="project01/distributional_RL.png" alt="ATC-Mapless Navigation" />
-                        <img src="project01/Robot.png" alt="ATC-Mapless Navigation - Robot" />
-                    </div> -->
-                    <p>Development and implementation of Navigation algorithm with collision avoidance based 
-                        on Deep Reinforcement Learning (Deep-RL). With unknown environments, the Mapless navigation algorithm 
-                        using deep reinforcement learning is developed to navigate safely the human-robot in dynamic environments.</p>
-<!--                     <h4> <strong>Mission: </strong></h4> -->
-                    <ul class="project-task">
-                        <li>Developing the reinforcement learning framework for autonomous mobile robot mapless navigation.</li>
-                        <li>Training deep reinforcement learning (Deep-RL) models, and transferring the trained Deep-RL model into the real environments (Sim-to-real Transfer).</li>
-                        <li>Evaluating human robots in static and dynamic environments. ( <a href="https://drive.google.com/drive/folders/1PJfrekHhJnOYmRBM0oFPgzubFloTzuLL" target="_blank">Korean certification</a>) </li>
-<!--                          <li> </li> -->
-                    </ul>
-
-                   <div class="project-videos">
-                    <iframe 
-                        width="560" 
-                        height="315" 
-                        src="https://www.youtube.com/embed/vIxRqXidKIM" 
-                        title="YouTube video player" 
-                        frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                        allowfullscreen>
-                    </iframe>
-                    <iframe 
-                        width="560" 
-                        height="315" 
-                        src="https://www.youtube.com/embed/cQU-u1ea990" 
-                        title="YouTube video player" 
-                        frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                        allowfullscreen>
-                    </iframe>
-                        <!--   <iframe 
-                        width="560" 
-                        height="315" 
-                        src="https://youtu.be/ih3GvM870v0" 
-                        title="YouTube video player" 
-                        frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                        allowfullscreen>
-                    </iframe> -->
-                </div>
-                <a href="https://www.youtube.com/watch?v=La57XZhOZuQ" target="_blank">Video 1</a>
-                <a href="https://www.youtube.com/watch?v=cQU-u1ea990&t=38s" target="_blank">video 2</a>
-                <a href="https://www.youtube.com/watch?v=vIxRqXidKIM" target="_blank">video 3</a>
-                <a href="https://ieeexplore.ieee.org/document/10599466" target="_blank">Paper link</a>
-                <!--    <p> March, 2022 - Sep, 2024</p> -->
-                <p>Location: Intelligent Robot Lab(IRL), Chungbuk National University(CBNU), South Korea.</p>
+            <div class="section-header">
+                <span class="section-tag">Work</span>
+                <h2>My Projects</h2>
             </div>
 
-                
-                <div class="project">
-                    <h3>KIST-sub project, June 2020 - Feb 2022</h3>
-                    <p> Research and development of autonomous mobile robot technology
-                            for industrial transportation applications.</p>
-                    <ul class="project-task">
-<!--                     <h4> <strong>Mission: </strong></h4> -->
-                        <li>Writing the proposed research. </li>
-                        <li>Design the autonomous navigation framework for autonomous mobile navigation. </li>
-                        <li>Simulation teleoperation with the kinematic model of three-wheel omni robot. </li>
-                        <li>Developing controller for autonomous mobile robot navigation in simulation. </li>
-                        <li>Hardware system Design for mobile robot.</li>
-                    </ul>
-                    <div class="project-videos">
-                        <iframe 
-                            width="560" 
-                            height="315" 
-                            src="https://www.youtube.com/embed/M8A0OtvCrv0" 
-                            title="YouTube video player" 
-                            frameborder="0" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                            allowfullscreen>
-                        </iframe>
-                        <iframe 
-                            width="560" 
-                            height="315" 
-                            src="https://www.youtube.com/embed/8iD8xglJB0U" 
-                            title="YouTube video player" 
-                            frameborder="0" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                            allowfullscreen>
-                        </iframe>
-                    </div>
-                    <a href="https://www.youtube.com/watch?v=M8A0OtvCrv0" target="_blank">Video1</a>
-                    <a href="https://www.youtube.com/watch?v=8iD8xglJB0U" target="_blank">Video2</a>
-                    <p>Location: Department of Electronic, Vietnam-Korea Institute of Science and Technology (VKIST), Vietnam.</p>
-                </div>
-                <div class="project">
-                    <h3>Motor Optimization, June 2020 - Feb 2021</h3>
-                    <p>Simulation and design for PMSM motor</p>
-<!--                     <h4> <strong>Mission: </strong></h4> -->
-                         <p> Design and simulation of magnetic flux</p>
-                    
-                    <p>Location: Department of Electronic, Vietnam-Korea Institute of Science and
-                        Technology (VKIST), Vietnam.</p>
-                </div>
-                
-                <div class="project">
-                    <h3>Smart Human-Form IVASTBot Robot Applied In Communication And Serving Human, June 2018 - June 2020.</h3>
-                    <p>Research, development, and completion of algorithms and embedded programming applying artificial intelligence (AI) for human-robot, phase 01.</p>
-                    <ul class="project-task">
-                        <li>Design an intelligent trajectory algorithm for an Omnidirectional Mobile Robot. </li>
-                        <li>Design hardware system for mobile robots.</li>
-                    </ul>
-<!--                     <div class="project-videos">
-                        <iframe 
-                            width="560" 
-                            height="315" 
-                            src="https://www.youtube.com/watch?v=ZEE1joPMmo4" 
-                            title="YouTube video player" 
-                            frameborder="0" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                            allowfullscreen>
-                        </iframe>
-                        <iframe 
-                            width="560" 
-                            height="315" 
-                            src="https://www.youtube.com/watch?v=EaXt-K54lHA" 
-                            title="YouTube video player" 
-                            frameborder="0" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                            allowfullscreen>
-                        </iframe>
-                    </div> -->
-                    
-                    <!--  <p> June, 2018 - June, 2020</p> -->
-                    <p>Location: Physic Institute, Vietnam Academy of Science and Technology (VAST), Vietnam.</p>
-                </div>   
-                <!-- h2>Media</h2>
-                <h3>Watch Our Video</h3>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                
-                <h3>Dynamic Image</h3>
-                <button onclick="changeImage()">Change Image</button>
-                <img id="dynamic-img" src="image1.jpg" alt="Dynamic Image" style="width: 100%; max-width: 600px; margin-top: 20px;">
-                
-                <h3>Hover Image</h3>
-                <img id="hover-img" src="image1.jpg" alt="Hover Image" style="width: 100%; max-width: 600px; transition: all 0.3s;">
-        
-                <h3>Slideshow</h3>
-                <div class="slideshow-container">
-                    <div class="slide fade">
-                        <img src="image1.jpg" style="width: 100%; height: auto;">
-                    </div>
-                    <div class="slide fade">
-                        <img src="image2.jpg" style="width: 100%; height: auto;">
-                    </div>
-                    <div class="slide fade">
-                        <img src="image3.jpg" style="width: 100%; height: auto;">
-                    </div>
-                </div-->
+            <!-- Filter -->
+            <div class="filter-bar">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="deep-rl">Deep RL</button>
+                <button class="filter-btn" data-filter="navigation">Navigation</button>
+                <button class="filter-btn" data-filter="planning">Planning</button>
+                <button class="filter-btn" data-filter="hardware">Hardware</button>
+                <button class="filter-btn" data-filter="control">Control</button>
+            </div>
 
-                
-                <!-- Add more projects as needed -->
+            <div class="projects-grid">
+
+                <div class="proj-card" data-tags="navigation planning">
+                    <div class="proj-header">
+                        <span class="proj-tag">Navigation · Planning</span>
+                        <span class="proj-year">September 2024 – Present</span>
+                    </div>
+                    <h3>Local Planning for Service Robots</h3>
+                    <p>Developed and integrated local planning algorithms into a navigation architecture for service robots. Released multiple versions supporting both circular and square robot footprints deployed in restaurant environments.</p>
+                    <div class="proj-links">
+                        <a href="https://rgt.kr/" target="_blank"><i class="fas fa-globe"></i> RGT Company</a>
+                        <a href="https://github.com/Manh-RGT" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                    <p class="proj-location"><i class="fas fa-map-marker-alt"></i> RGT, South Korea</p>
+                </div>
+
+                <div class="proj-card" data-tags="deep-rl navigation">
+                    <div class="proj-header">
+                        <span class="proj-tag">Deep RL · Navigation</span>
+                        <span class="proj-year">April 2022 – December 2024</span>
+                    </div>
+                    <h3>ATC-Mapless Navigation</h3>
+                    <p>Developed a deep reinforcement learning framework for autonomous mobile robot mapless navigation in dynamic environments. Includes sim-to-real transfer and evaluation in static/dynamic settings.</p>
+                    <div class="proj-videos">
+                        <iframe src="https://www.youtube.com/embed/vIxRqXidKIM" allowfullscreen></iframe>
+                        <iframe src="https://www.youtube.com/embed/cQU-u1ea990" allowfullscreen></iframe>
+                    </div>
+                    <div class="proj-links">
+                        <a href="https://www.youtube.com/watch?v=La57XZhOZuQ" target="_blank"><i class="fab fa-youtube"></i> Video 1</a>
+                        <a href="https://www.youtube.com/watch?v=cQU-u1ea990&t=38s" target="_blank"><i class="fab fa-youtube"></i> Video 2</a>
+                        <a href="https://ieeexplore.ieee.org/document/10599466" target="_blank"><i class="fas fa-file-alt"></i> Paper</a>
+                        <a href="https://drive.google.com/drive/folders/1PJfrekHhJnOYmRBM0oFPgzubFloTzuLL" target="_blank"><i class="fas fa-certificate"></i> Certification</a>
+                    </div>
+                    <p class="proj-location"><i class="fas fa-map-marker-alt"></i> Intelligent Robot Lab, CBNU, South Korea</p>
+                </div>
+
+                <div class="proj-card" data-tags="navigation hardware">
+                    <div class="proj-header">
+                        <span class="proj-tag">Navigation · Hardware</span>
+                        <span class="proj-year">August 2020 – February 2022</span>
+                    </div>
+                    <h3>KIST Sub-project — Industrial AMR</h3>
+                    <p>Research and development of autonomous mobile robot technology for industrial transportation. Designed navigation framework, kinematic models, and hardware systems for a three-wheel omni robot.</p>
+                    <div class="proj-videos">
+                        <iframe src="https://www.youtube.com/embed/M8A0OtvCrv0" allowfullscreen></iframe>
+                        <iframe src="https://www.youtube.com/embed/8iD8xglJB0U" allowfullscreen></iframe>
+                    </div>
+                    <div class="proj-links">
+                        <a href="https://www.youtube.com/watch?v=M8A0OtvCrv0" target="_blank"><i class="fab fa-youtube"></i> Video 1</a>
+                        <a href="https://www.youtube.com/watch?v=8iD8xglJB0U" target="_blank"><i class="fab fa-youtube"></i> Video 2</a>
+                    </div>
+                    <p class="proj-location"><i class="fas fa-map-marker-alt"></i> VKIST, Vietnam</p>
+                </div>
+
+                <div class="proj-card" data-tags="hardware control">
+                    <div class="proj-header">
+                        <span class="proj-tag">Control · Hardware</span>
+                        <span class="proj-year">August 2020 – August 2021</span>
+                    </div>
+                    <h3>PMSM Motor Optimization</h3>
+                    <p>Simulation and design of Permanent Magnet Synchronous Motor (PMSM). Designed and simulated magnetic flux distribution for motor optimization.</p>
+                    <p class="proj-location"><i class="fas fa-map-marker-alt"></i> VKIST, Vietnam</p>
+                </div>
+
+                <div class="proj-card" data-tags="navigation hardware control">
+                    <div class="proj-header">
+                        <span class="proj-tag">Navigation · Hardware · AI</span>
+                        <span class="proj-year">June 2018 – August 2020</span>
+                    </div>
+                    <h3>IVASTBot — Smart Human-Form Robot</h3>
+                    <p>Research, development and embedded programming applying AI for a humanoid robot (phase 01). Designed an intelligent trajectory algorithm for an Omnidirectional Mobile Robot and the corresponding hardware system.</p>
+                    <p class="proj-location"><i class="fas fa-map-marker-alt"></i> Physics Institute, VAST, Vietnam</p>
+                </div>
+
             </div>
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <!-- Skills Section -->
-    <section id="skills" class="section">
+    <!-- NEWS -->
+    <section id="news" class="section section-alt">
         <div class="container">
-            <h2>Skills</h2>
-            <ul class="skills-list">
-                <li><strong>Programming Languages:</strong> C++, Python, MATLAB, LaTeX.</li>
-                <li><strong>Machine Learning & Robotics:</strong> Reinforcement Learning, Probabilistic Robotics, Path Planning.</li>
-                <li><strong>Frameworks:</strong> ROS, OpenCV, PyTorch, OpenAI, Navigation-stack, GTSAM.</li>
-                <li><strong>Control Systems:</strong> Backstepping Control, Model Predictive Control, PID, Kalman Filters.</li>
-                <li><strong>Embedded Systems:</strong> ARM (STM32), Arduino.</li>
-                <li><strong>Simulation Tools:</strong> Gazebo, V-REP, Stage.</li>
-            </ul>
+            <div class="section-header">
+                <span class="section-tag">Highlights</span>
+                <h2>News &amp; Achievements</h2>
+            </div>
+            <div class="news-list">
+
+                <div class="news-item">
+                    <div class="news-date">2024</div>
+                    <div class="news-body">
+                        <h4>Patent Granted — KR Patent MP24-0134/MP24-0141</h4>
+                        <p>"Autonomous navigation system in complex environments based on deep RL using selective policy switching for a mobile robot." Co-authored with Prof. Gon-Woo Kim.</p>
+                        <a href="https://drive.google.com/drive/folders/1Mle-BEEG1L1Q9QzCNI4e2FPLFp_w5ATw?usp=sharing" target="_blank">View Patent →</a>
+                    </div>
+                </div>
+
+                <div class="news-item">
+                    <div class="news-date">2024</div>
+                    <div class="news-body">
+                        <h4>IEEE Access Publication</h4>
+                        <p>"Cooperative Deep Reinforcement Learning Policies for Autonomous Navigation in Complex Environments," IEEE Access, vol. 12, pp. 101053–101065, doi: 10.1109/ACCESS.2024.3429230.</p>
+                        <a href="https://ieeexplore.ieee.org/document/10599466" target="_blank">Read Paper →</a>
+                    </div>
+                </div>
+
+                <div class="news-item">
+                    <div class="news-date">2024</div>
+                    <div class="news-body">
+                        <h4>M.Sc. Graduation — GPA 4.19/4.5</h4>
+                        <p>Completed Master of Science in Control and Robot Engineering at HUST with a thesis on deep RL-based autonomous navigation.</p>
+                    </div>
+                </div>
+
+                <div class="news-item">
+                    <div class="news-date">2024</div>
+                    <div class="news-body">
+                        <h4>Korean Safety Certification for Human Robot</h4>
+                        <p>Evaluated and certified human-robot performance in static and dynamic environments under Korean certification standards.</p>
+                        <a href="https://drive.google.com/drive/folders/1PJfrekHhJnOYmRBM0oFPgzubFloTzuLL" target="_blank">View Certification →</a>
+                    </div>
+                </div>
+
+                <div class="news-item">
+                    <div class="news-date">2020</div>
+                    <div class="news-body">
+                        <h4>🏆 Best Graduation Thesis Defense — HUST</h4>
+                        <p>Thesis "Design intelligent trajectory system for Omnidirectional Mobile Robot" awarded Best Graduation Thesis Defense at HUST.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Publications -->
+            <div class="pubs-section">
+                <h3><i class="fas fa-book-open"></i> Selected Publications</h3>
+                <ol class="pubs-list">
+                    <li>
+                        <strong>Van Manh Tran</strong> and Gon-Woo Kim, "Cooperative Deep Reinforcement Learning Policies for Autonomous Navigation in Complex Environments," <em>IEEE Access</em>, vol. 12, pp. 101053–101065, 2024.
+                        <a href="https://ieeexplore.ieee.org/document/10599466" target="_blank">[Link]</a>
+                    </li>
+                    <li>
+                        <strong>Van Manh Tran</strong> and Gon-Woo Kim, "Mapless Navigation with Distributional Reinforcement Learning," <em>로봇학회 논문지 19.1</em>, pp. 92–97, 2024.
+                    </li>
+                    <li>
+                        Kim Duyen Ha Thi et al., "Adaptive Control for Uncertain Model of Omni-directional Mobile Robot Based on Radial Basis Function Neural Network," <em>Int. J. Control Autom. Syst.</em> 19, 1715–1727, 2021.
+                    </li>
+                    <li>
+                        Kim Duyen Ha Thi, <strong>Van Manh Tran</strong> et al., "Trajectory tracking control for four-wheeled omnidirectional mobile robot using Backstepping aggregated with sliding mode control," <em>ICA-SYMP 2019</em>.
+                        <a href="https://ieeexplore.ieee.org/document/8646041" target="_blank">[Link]</a>
+                    </li>
+                    <li>
+                        Nguyen Tung Lam, <strong>Van Manh Tran</strong> et al., "Nonlinear backstepping-sliding mode control of electro-hydraulic systems," <em>ICERA 2019</em>, Springer, 2020.
+                    </li>
+                </ol>
+                <a href="https://scholar.google.com/citations?user=ssog4ZUAAAAJ&hl=en" target="_blank" class="btn btn-outline btn-sm"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
+            </div>
         </div>
     </section>
 
-    <!-- New Patents Section -->
-    <section id="patents" class="section">
-        <div class="container">
-            <h2>Patents</h2>
-            <ul>
-                <li>
-                    <p>
-                        <strong class="highlight">Van Manh Tran</strong> and Gon-Woo Kim, 
-                        "Autonomous navigation system in complex environments based on deep reinforcement learning using selective policy switching for a mobile robot," 
-                        <i>
-                            <a href="https://drive.google.com/drive/folders/1Mle-BEEG1L1Q9QzCNI4e2FPLFp_w5ATw?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                KR Patent MP24-0134/MP24-0141
-                            </a>
-                        </i>, 2024.
-                    </p>
-                </li>
-            </ul>
-        </div>
-    </section>
-
-    
-    <!-- New Publications Section -->
-    <section id="publications" class="section">
-        <div class="container">
-            <h2>Publications</h2>
-            <ul>
-                <li>
-                    <p><strong class="highlight">Van Manh Tran</strong> and Gon-Woo. Kim, "Cooperative Deep Reinforcement Learning Policies for Autonomous Navigation in Complex Environments," in <i>IEEE Access</i>, vol. 12, pp. 101053-101065, 2024, doi: 10.1109/ACCESS.2024.3429230.</p>
-                </li>
-                <li>
-                    <p><strong class="highlight">Van Manh Tran</strong> and Gon-Woo. Kim, "Mapless Navigation with Distributional Reinforcement Learning." <i>로봇학회 논문지 19.1</i> (2024): 92-97.</p>
-                </li>
-                <li>
-                    <p>Kim, Duyen Ha Thi, Tien Ngo Manh, Cuong Nguyen Manh, Nhan Duc Nguyen, Dung Pham Tien, <strong class="highlight">Manh Tran Van</strong>, and Minh Phan Xuan, "Adaptive Control for Uncertain Model of Omni-directional Mobile Robot Based on Radial Basis Function Neural Network",  Int. J. Control Autom. Syst. 19, 1715–1727 (2021). https://doi.org/10.1007/s12555-019-1004-6.</p>
-                </li>
-                <li>
-                    <p>Kim Duyen Ha Thi; Manh Cuong Nguyen; Hoang Thuat Vo; <strong class="highlight">Van Manh Tran</strong>; Duc Dinh Nguyen; Anh Dung Bui, "Trajectory tracking control for four-wheeled omnidirectional mobile robot using Backstepping technique aggregated with sliding mode control", 2019 First International Symposium on Instrumentation, Control, Artificial Intelligence, and Robotics (ICA-SYMP), Bangkok, Thailand, 2019, pp. 131-134, doi: 10.1109/ICA-SYMP.2019.8646041</p>
-                </li>
-                <li>
-                    <p>Nguyen, Tung Lam, Hong Quang Nguyen, Manh Cuong Nguyen, <strong class="highlight">Van Manh Tran</strong>, Danh Huy Nguyen, and Anh Duc Nguyen., "Nonlinear backstepping-sliding mode control of electro-hydraulic systems", in Advances in Engineering Research and Application: Proceedings of the International Conference on Engineering Research and Applications, ICERA 2019, pp. 512-519. Springer International Publishing, 2020.</p>
-                </li>
-                <li>
-                    <p>Kim Duyen Ha Thi, Manh Cuong Nguyen, Hoang Thuat Vo, <strong class="highlight">Van Manh Tran</strong>, Duc Dinh Nguyen, Anh Dung Bui, "Trajectory tracking control for four-wheeled omnidirectional mobile robot using Backstepping 
-                        technique aggregated with sliding mode control", in 2019 First International Symposium on Instrumentation, Control, Artificial Intelligence, and Robotics (ICA-SYMP).</p>
-                </li>
-            </ul>
-        </div>
-    </section>
-
+    <!-- CONTACT -->
     <section id="contact" class="section">
         <div class="container">
-            <h2>Contact</h2>
-             <li>
-                <p> Feel free to reach out for collaborations, job opportunities, or just to chat about robotics! </p>
-             </li>
-            <li>
-                <p><i class="fas fa-envelope"></i> Email: <a href="mailto:manhtran4321@gmail.com">manhtran4321@gmail.com</a></p>
-                <p class="social-links">
-                    <a href="https://www.linkedin.com/in/manhtran97" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a> | 
-                    <a href="https://scholar.google.com/citations?user=ssog4ZUAAAAJ&hl=en" target="_blank"><i class="fas fa-graduation-cap"></i> Google Scholar</a> | 
-                    <a href="https://github.com/Manhbk97" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-                </p>
-            </li>
-            
+            <div class="section-header">
+                <span class="section-tag">Get in Touch</span>
+                <h2>Contact</h2>
+            </div>
+            <p class="contact-sub">Feel free to reach out for collaborations, job opportunities, or just to chat about robotics!</p>
+            <div class="contact-grid">
+                <a href="mailto:manhtran4321@gmail.com" class="contact-card">
+                    <i class="fas fa-envelope"></i>
+                    <span>manhtran4321@gmail.com</span>
+                </a>
+                <a href="https://www.linkedin.com/in/manhtran97" target="_blank" class="contact-card">
+                    <i class="fab fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://github.com/Manhbk97" target="_blank" class="contact-card">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+                <a href="https://scholar.google.com/citations?user=ssog4ZUAAAAJ&hl=en" target="_blank" class="contact-card">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Google Scholar</span>
+                </a>
+            </div>
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 Tran Van Manh. All rights reserved.</p>
+            <p>© 2024 Tran Van Manh. All rights reserved.</p>
         </div>
     </footer>
 
