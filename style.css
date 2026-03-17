@@ -385,7 +385,7 @@ a:hover { color: var(--accent-light); text-decoration: underline; }
 }
 .projects-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 1.5rem;
 }
 .proj-card {
@@ -438,6 +438,17 @@ a:hover { color: var(--accent-light); text-decoration: underline; }
     aspect-ratio: 16/9;
     border: none;
     border-radius: 6px;
+}
+.proj-images {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5rem;
+}
+.proj-images img {
+    width: 100%;
+    border-radius: 6px;
+    object-fit: cover;
+    aspect-ratio: 4/3;
 }
 .proj-links {
     display: flex;
@@ -609,6 +620,7 @@ footer {
     .expertise-cards { grid-template-columns: 1fr; }
     .stats-row { grid-template-columns: repeat(2, 1fr); }
     .proj-videos { grid-template-columns: 1fr; }
+    .proj-images { grid-template-columns: repeat(2, 1fr); }
     .contact-grid { grid-template-columns: 1fr 1fr; }
     .news-item { grid-template-columns: 50px 1fr; gap: 1rem; }
     .hero-name { font-size: 2.2rem; }
