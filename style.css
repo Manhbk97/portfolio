@@ -10,7 +10,7 @@
     --surface: #ffffff;
     --text: #1a1a1a;
     --text-muted: #666;
-    --accent: #0a6640;       /* Deep teal-green */
+    --accent: #377ce2;       /* Deep teal-blue */
     --accent-light: #12a86a;
     --accent-glow: rgba(10, 102, 64, 0.12);
     --border: #e0ddd8;
@@ -140,33 +140,35 @@ a:hover { color: var(--accent-light); text-decoration: underline; }
     position: absolute;
     inset: 0;
     background:
-        radial-gradient(ellipse 60% 50% at 50% 30%, rgba(10,102,64,.06) 0%, transparent 70%),
-        linear-gradient(170deg, #f8f7f4 0%, #eef5f1 100%);
+        url('image/background2.jpg') center center / cover no-repeat;
     z-index: 0;
 }
 .hero-bg::before {
     content: '';
     position: absolute;
     inset: 0;
-    background-image:
-        repeating-linear-gradient(0deg, transparent, transparent 39px, rgba(10,102,64,.035) 40px),
-        repeating-linear-gradient(90deg, transparent, transparent 39px, rgba(10,102,64,.035) 40px);
+    background: linear-gradient(
+        160deg,
+        rgba(10, 18, 30, 0.72) 0%,
+        rgba(10, 18, 30, 0.55) 50%,
+        rgba(10, 18, 30, 0.70) 100%
+    );
 }
 .hero-content { position: relative; z-index: 1; max-width: 680px; animation: fadeUp .9s ease both; }
 .hero-avatar {
-    width: 100px;
-    height: 100px;
+    width: 110px;
+    height: 110px;
     border-radius: 50%;
     object-fit: cover;
-    border: 3px solid var(--accent);
-    box-shadow: 0 0 0 6px var(--accent-glow);
+    border: 3px solid rgba(255,255,255,0.85);
+    box-shadow: 0 0 0 6px rgba(255,255,255,0.12), 0 8px 32px rgba(0,0,0,0.4);
     margin-bottom: 1.5rem;
 }
 .hero-greeting {
     font-family: var(--mono);
     font-size: 0.8rem;
     letter-spacing: 3px;
-    color: var(--accent);
+    color: rgba(255,255,255,0.7);
     text-transform: uppercase;
     margin-bottom: 0.5rem;
 }
@@ -174,14 +176,16 @@ a:hover { color: var(--accent-light); text-decoration: underline; }
     font-size: clamp(2.4rem, 6vw, 4rem);
     font-weight: 600;
     line-height: 1.1;
-    color: var(--text);
+    color: #ffffff;
     margin-bottom: 0.75rem;
+    text-shadow: 0 2px 16px rgba(0,0,0,0.35);
 }
 .hero-title {
     font-size: 0.95rem;
-    color: var(--text-muted);
+    color: rgba(255,255,255,0.72);
     margin-bottom: 2rem;
     font-weight: 400;
+    letter-spacing: 0.3px;
 }
 .hero-btns { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
 .scroll-down {
@@ -189,7 +193,7 @@ a:hover { color: var(--accent-light); text-decoration: underline; }
     bottom: 2rem;
     left: 50%;
     transform: translateX(-50%);
-    color: var(--accent);
+    color: rgba(255,255,255,0.6);
     font-size: 1.1rem;
     animation: bounce 2s infinite;
     z-index: 1;
