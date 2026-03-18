@@ -135,16 +135,12 @@ a:hover { color: var(--accent-light); text-decoration: underline; }
     position: relative;
     padding: var(--nav-h) 20px 80px;
     overflow: hidden;
+    background-image: url('image/background2.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 .hero-bg {
-    position: absolute;
-    inset: 0;
-    background:
-        url('image/background2.jpg') center center / cover no-repeat;
-    z-index: 0;
-}
-.hero-bg::before {
-    content: '';
     position: absolute;
     inset: 0;
     background: linear-gradient(
@@ -153,7 +149,9 @@ a:hover { color: var(--accent-light); text-decoration: underline; }
         rgba(10, 18, 30, 0.55) 50%,
         rgba(10, 18, 30, 0.70) 100%
     );
+    z-index: 0;
 }
+.hero-bg::before { content: none; }
 .hero-content { position: relative; z-index: 1; max-width: 680px; animation: fadeUp .9s ease both; }
 .hero-avatar {
     width: 110px;
