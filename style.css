@@ -63,7 +63,7 @@ a:hover { color: var(--accent-light); text-decoration: underline; }
 .nav-logo {
     font-family: var(--mono);
     font-weight: 700;
-    font-size: 1.1rem;
+    font-size: 1.16rem;
     color: var(--accent);
     letter-spacing: 2px;
     flex-shrink: 0;
@@ -76,7 +76,7 @@ a:hover { color: var(--accent-light); text-decoration: underline; }
 }
 .nav-links a {
     color: var(--text);
-    font-size: 0.85rem;
+    font-size: 0.91rem;
     font-weight: 500;
     padding: 6px 12px;
     border-radius: 6px;
@@ -91,7 +91,7 @@ a:hover { color: var(--accent-light); text-decoration: underline; }
     display: none;
     background: none;
     border: none;
-    font-size: 1.2rem;
+    font-size: 1.26rem;
     cursor: pointer;
     color: var(--text);
     margin-left: auto;
@@ -105,7 +105,7 @@ a:hover { color: var(--accent-light); text-decoration: underline; }
     padding: 11px 22px;
     border-radius: 8px;
     font-weight: 600;
-    font-size: 0.88rem;
+    font-size: 0.94rem;
     transition: all .25s;
     cursor: pointer;
     text-decoration: none;
@@ -122,7 +122,7 @@ a:hover { color: var(--accent-light); text-decoration: underline; }
     background: transparent;
 }
 .btn-outline:hover { background: var(--accent-glow); transform: translateY(-2px); text-decoration: none; }
-.btn-sm { padding: 7px 16px; font-size: 0.82rem; }
+.btn-sm { padding: 7px 16px; font-size: 0.88rem; }
 
 /* ─── HERO ──────────────────────────────────── */
 #hero {
@@ -164,14 +164,14 @@ a:hover { color: var(--accent-light); text-decoration: underline; }
 }
 .hero-greeting {
     font-family: var(--mono);
-    font-size: 0.8rem;
+    font-size: 0.86rem;
     letter-spacing: 3px;
     color: rgba(255,255,255,0.7);
     text-transform: uppercase;
     margin-bottom: 0.5rem;
 }
 .hero-name {
-    font-size: clamp(2.4rem, 6vw, 4rem);
+    font-size: clamp(2.46rem, 6vw, 4.06rem);
     font-weight: 600;
     line-height: 1.1;
     color: #ffffff;
@@ -179,7 +179,7 @@ a:hover { color: var(--accent-light); text-decoration: underline; }
     text-shadow: 0 2px 16px rgba(0,0,0,0.35);
 }
 .hero-title {
-    font-size: 0.95rem;
+    font-size: 1.01rem;
     color: rgba(255,255,255,0.72);
     margin-bottom: 2rem;
     font-weight: 400;
@@ -192,7 +192,7 @@ a:hover { color: var(--accent-light); text-decoration: underline; }
     left: 50%;
     transform: translateX(-50%);
     color: rgba(255,255,255,0.6);
-    font-size: 1.1rem;
+    font-size: 1.16rem;
     animation: bounce 2s infinite;
     z-index: 1;
 }
@@ -206,7 +206,7 @@ a:hover { color: var(--accent-light); text-decoration: underline; }
 .section-tag {
     display: inline-block;
     font-family: var(--mono);
-    font-size: 0.72rem;
+    font-size: 0.78rem;
     letter-spacing: 3px;
     text-transform: uppercase;
     color: var(--accent);
@@ -216,7 +216,7 @@ a:hover { color: var(--accent-light); text-decoration: underline; }
     margin-bottom: 0.6rem;
 }
 .section-header h2 {
-    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-size: clamp(1.56rem, 3vw, 2.06rem);
     font-weight: 600;
     color: var(--text);
 }
@@ -235,7 +235,7 @@ a:hover { color: var(--accent-light); text-decoration: underline; }
     display: flex;
     align-items: center;
     gap: 0.6rem;
-    font-size: 0.88rem;
+    font-size: 0.94rem;
     color: var(--text-muted);
 }
 .info-item i { color: var(--accent); width: 16px; }
@@ -258,13 +258,13 @@ a:hover { color: var(--accent-light); text-decoration: underline; }
     transform: translateY(-3px);
 }
 .exp-card i {
-    font-size: 1.5rem;
+    font-size: 1.56rem;
     color: var(--accent);
     margin-bottom: 0.6rem;
     display: block;
 }
-.exp-card h4 { font-size: 0.88rem; font-weight: 600; margin-bottom: 0.3rem; }
-.exp-card p { font-size: 0.8rem; color: var(--text-muted); line-height: 1.4; }
+.exp-card h4 { font-size: 0.94rem; font-weight: 600; margin-bottom: 0.3rem; }
+.exp-card p { font-size: 0.86rem; color: var(--text-muted); line-height: 1.4; }
 
 /* STATS */
 .stats-row {
@@ -280,13 +280,13 @@ a:hover { color: var(--accent-light); text-decoration: underline; }
 .stat-num {
     display: block;
     font-family: var(--mono);
-    font-size: 2.5rem;
+    font-size: 2.56rem;
     font-weight: 700;
     color: var(--accent);
     line-height: 1;
     margin-bottom: 0.4rem;
 }
-.stat-label { font-size: 0.8rem; color: var(--text-muted); font-weight: 500; }
+.stat-label { font-size: 0.86rem; color: var(--text-muted); font-weight: 500; }
 
 /* ─── RESUME ─────────────────────────────────── */
 .resume-grid {
@@ -295,7 +295,7 @@ a:hover { color: var(--accent-light); text-decoration: underline; }
     gap: 3rem;
 }
 .resume-col-title {
-    font-size: 1rem;
+    font-size: 1.06rem;
     font-weight: 600;
     color: var(--accent);
     margin-bottom: 1.5rem;
@@ -323,21 +323,21 @@ a:hover { color: var(--accent-light); text-decoration: underline; }
 }
 .tl-year {
     font-family: var(--mono);
-    font-size: 0.72rem;
+    font-size: 0.78rem;
     color: var(--accent);
     letter-spacing: 1px;
     display: block;
     margin-bottom: 0.3rem;
 }
-.tl-body h4 { font-size: 0.92rem; font-weight: 600; margin-bottom: 0.2rem; }
-.tl-inst { font-size: 0.83rem; color: var(--text-muted); margin-bottom: 0.2rem; }
-.tl-gpa { font-family: var(--mono); font-size: 0.78rem; color: var(--accent); margin-bottom: 0.3rem; }
-.tl-thesis { font-size: 0.8rem; color: var(--text-muted); line-height: 1.5; }
+.tl-body h4 { font-size: 0.98rem; font-weight: 600; margin-bottom: 0.2rem; }
+.tl-inst { font-size: 0.89rem; color: var(--text-muted); margin-bottom: 0.2rem; }
+.tl-gpa { font-family: var(--mono); font-size: 0.84rem; color: var(--accent); margin-bottom: 0.3rem; }
+.tl-thesis { font-size: 0.86rem; color: var(--text-muted); line-height: 1.5; }
 
 /* Skills */
 .skills-group { display: flex; flex-direction: column; gap: 1rem; }
 .skill-label {
-    font-size: 0.75rem;
+    font-size: 0.81rem;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -351,7 +351,7 @@ a:hover { color: var(--accent-light); text-decoration: underline; }
     border: 1px solid var(--border);
     border-radius: 20px;
     padding: 3px 10px;
-    font-size: 0.78rem;
+    font-size: 0.84rem;
     color: var(--text);
     transition: all .2s;
 }
@@ -373,7 +373,7 @@ a:hover { color: var(--accent-light); text-decoration: underline; }
     border: 1px solid var(--border);
     border-radius: 20px;
     padding: 7px 18px;
-    font-size: 0.82rem;
+    font-size: 0.88rem;
     font-weight: 500;
     cursor: pointer;
     transition: all .2s;
@@ -414,7 +414,7 @@ a:hover { color: var(--accent-light); text-decoration: underline; }
     gap: 0.5rem;
 }
 .proj-tag {
-    font-size: 0.7rem;
+    font-size: 0.76rem;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -425,11 +425,11 @@ a:hover { color: var(--accent-light); text-decoration: underline; }
 }
 .proj-year {
     font-family: var(--mono);
-    font-size: 0.72rem;
+    font-size: 0.78rem;
     color: var(--text-muted);
 }
-.proj-card h3 { font-size: 1rem; font-weight: 600; color: var(--text); }
-.proj-card p { font-size: 0.85rem; color: var(--text-muted); line-height: 1.6; }
+.proj-card h3 { font-size: 1.06rem; font-weight: 600; color: var(--text); }
+.proj-card p { font-size: 0.91rem; color: var(--text-muted); line-height: 1.6; }
 .proj-videos {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -460,7 +460,7 @@ a:hover { color: var(--accent-light); text-decoration: underline; }
     flex-wrap: wrap;
 }
 .proj-links a {
-    font-size: 0.78rem;
+    font-size: 0.84rem;
     font-weight: 500;
     display: inline-flex;
     align-items: center;
@@ -474,14 +474,14 @@ a:hover { color: var(--accent-light); text-decoration: underline; }
 }
 .proj-links a:hover { background: var(--accent); color: #fff; text-decoration: none; }
 .proj-location {
-    font-size: 0.78rem;
+    font-size: 0.84rem;
     color: var(--text-muted) !important;
     display: flex;
     align-items: center;
     gap: 4px;
     margin-top: auto;
 }
-.proj-location i { color: var(--accent); font-size: 0.7rem; }
+.proj-location i { color: var(--accent); font-size: 0.76rem; }
 
 /* ─── NEWS ──────────────────────────────────── */
 .news-list {
@@ -503,14 +503,14 @@ a:hover { color: var(--accent-light); text-decoration: underline; }
 .news-item:hover { box-shadow: var(--shadow); border-color: rgba(10,102,64,.25); }
 .news-date {
     font-family: var(--mono);
-    font-size: 0.8rem;
+    font-size: 0.86rem;
     font-weight: 700;
     color: var(--accent);
     padding-top: 2px;
 }
-.news-body h4 { font-size: 0.92rem; font-weight: 600; margin-bottom: 0.3rem; }
-.news-body p { font-size: 0.82rem; color: var(--text-muted); margin-bottom: 0.5rem; }
-.news-body a { font-size: 0.8rem; font-weight: 600; }
+.news-body h4 { font-size: 0.98rem; font-weight: 600; margin-bottom: 0.3rem; }
+.news-body p { font-size: 0.88rem; color: var(--text-muted); margin-bottom: 0.5rem; }
+.news-body a { font-size: 0.86rem; font-weight: 600; }
 
 /* Conferences */
 .conf-section {
@@ -521,7 +521,7 @@ a:hover { color: var(--accent-light); text-decoration: underline; }
     margin-bottom: 1.5rem;
 }
 .conf-section h3 {
-    font-size: 1rem;
+    font-size: 1.06rem;
     font-weight: 600;
     color: var(--accent);
     display: flex;
@@ -537,7 +537,7 @@ a:hover { color: var(--accent-light); text-decoration: underline; }
     margin-bottom: 1.75rem;
 }
 .conf-list li {
-    font-size: 0.84rem;
+    font-size: 0.9rem;
     color: var(--text);
     line-height: 1.6;
 }
@@ -563,7 +563,7 @@ a:hover { color: var(--accent-light); text-decoration: underline; }
 }
 .conf-img-wrap:hover img { transform: scale(1.04); }
 .conf-img-wrap span {
-    font-size: 0.72rem;
+    font-size: 0.78rem;
     color: var(--text-muted);
     text-align: center;
     padding: 0.3rem 0.5rem 0.4rem;
@@ -578,7 +578,7 @@ a:hover { color: var(--accent-light); text-decoration: underline; }
     padding: 2rem;
 }
 .pubs-section h3 {
-    font-size: 1rem;
+    font-size: 1.06rem;
     font-weight: 600;
     color: var(--accent);
     display: flex;
@@ -594,7 +594,7 @@ a:hover { color: var(--accent-light); text-decoration: underline; }
     margin-bottom: 1.5rem;
 }
 .pubs-list li {
-    font-size: 0.84rem;
+    font-size: 0.9rem;
     color: var(--text);
     line-height: 1.6;
 }
@@ -604,7 +604,7 @@ a:hover { color: var(--accent-light); text-decoration: underline; }
 .contact-sub {
     color: var(--text-muted);
     margin-bottom: 2rem;
-    font-size: 0.95rem;
+    font-size: 1.01rem;
 }
 .contact-grid {
     display: grid;
@@ -625,10 +625,10 @@ a:hover { color: var(--accent-light); text-decoration: underline; }
     color: var(--text);
 }
 .contact-card i {
-    font-size: 1.75rem;
+    font-size: 1.81rem;
     color: var(--accent);
 }
-.contact-card span { font-size: 0.82rem; font-weight: 500; text-align: center; }
+.contact-card span { font-size: 0.88rem; font-weight: 500; text-align: center; }
 .contact-card:hover {
     background: var(--accent);
     border-color: var(--accent);
@@ -645,7 +645,7 @@ footer {
     color: rgba(255,255,255,.5);
     text-align: center;
     padding: 1.5rem 0;
-    font-size: 0.82rem;
+    font-size: 0.88rem;
 }
 
 /* ─── ANIMATIONS ─────────────────────────────── */
@@ -687,5 +687,5 @@ footer {
     .conf-gallery { grid-template-columns: repeat(2, 1fr); }
     .contact-grid { grid-template-columns: 1fr 1fr; }
     .news-item { grid-template-columns: 50px 1fr; gap: 1rem; }
-    .hero-name { font-size: 2.2rem; }
+    .hero-name { font-size: 2.26rem; }
 }
