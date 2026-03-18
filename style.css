@@ -10,7 +10,7 @@
     --surface: #ffffff;
     --text: #1a1a1a;
     --text-muted: #666;
-    --accent: #172cf0;       /* Deep teal-blue */
+    --accent: #1844a3;       /* Deep teal-blue */
     --accent-light: #12a86a;
     --accent-glow: rgba(10, 102, 64, 0.12);
     --border: #e0ddd8;
@@ -164,7 +164,7 @@ a:hover { color: var(--accent-light); text-decoration: underline; }
 }
 .hero-greeting {
     font-family: var(--mono);
-    font-size: 0.86rem;
+    font-size: 0.9rem;
     letter-spacing: 3px;
     color: rgba(255,255,255,0.7);
     text-transform: uppercase;
@@ -179,7 +179,7 @@ a:hover { color: var(--accent-light); text-decoration: underline; }
     text-shadow: 0 2px 16px rgba(0,0,0,0.35);
 }
 .hero-title {
-    font-size: 1.01rem;
+    font-size: 1.2rem;
     color: rgba(255,255,255,0.72);
     margin-bottom: 2rem;
     font-weight: 400;
