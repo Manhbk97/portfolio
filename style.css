@@ -145,8 +145,8 @@ a:hover { color: var(--accent-light); text-decoration: underline; }
     inset: 0;
     background: linear-gradient(
         160deg,
-        rgba(10, 18, 30, 0.48) 0%,
-        rgba(10, 18, 30, 0.32) 50%,
+        rgba(91, 117, 155, 0.48) 0%,
+        rgba(82, 106, 139, 0.32) 50%,
         rgba(10, 18, 30, 0.46) 100%
     );
     z-index: 0;
