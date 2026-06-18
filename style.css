@@ -10,7 +10,7 @@
     --surface: #ffffff;
     --text: #1a1a1a;
     --text-muted: #666;
-    --accent: #121314;       /* Deep teal-blue */
+    --accent: #13375c;       /* Deep teal-blue */
     --accent-light: #12a86a;
     --accent-glow: rgba(10, 102, 64, 0.12);
     --border: #e0ddd8;
@@ -440,6 +440,24 @@ a:hover { color: var(--accent-light); text-decoration: underline; }
     aspect-ratio: 16/9;
     border: none;
     border-radius: 6px;
+}
+.local-video-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+}
+.local-video-wrap video {
+    width: 100%;
+    aspect-ratio: 16/9;
+    border-radius: 6px;
+    background: #000;
+    object-fit: contain;
+}
+.video-caption {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    text-align: center;
+    font-style: italic;
 }
 .proj-images {
     display: grid;

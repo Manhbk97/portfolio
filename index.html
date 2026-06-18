@@ -36,7 +36,7 @@
             <h1 class="hero-name">Tran Van Manh</h1>
             <p class="hero-title">Robotics Engineer &nbsp;|&nbsp; Deep RL Researcher &nbsp;|&nbsp; Embedded Systems</p>
             <div class="hero-btns">
-                <a href="CV/CV.pdf" target="_blank" class="btn btn-primary"><i class="fas fa-file-pdf"></i> Download CV</a>
+                <a href="CV/Tran_Van_Manh_CV_2026_JOB.pdf" target="_blank" class="btn btn-primary"><i class="fas fa-file-pdf"></i> Download CV</a>
                 <a href="#projects" target="_blank" class="btn btn-outline"><i class="fas fa-file-pdf"></i> View Projects</a>
             </div>
         </div>
@@ -94,7 +94,7 @@
                     <span class="stat-label">Years of Experience</span>
                 </div>
                 <div class="stat-item">
-                    <span class="stat-num" data-target="6">0</span>
+                    <span class="stat-num" data-target="8">0</span>
                     <span class="stat-label">Publications</span>
                 </div>
                 <div class="stat-item">
@@ -194,19 +194,35 @@
                 <button class="filter-btn" data-filter="planning">Planning</button>
                 <button class="filter-btn" data-filter="hardware">Hardware</button>
                 <button class="filter-btn" data-filter="control">Control</button>
+                <button class="filter-btn" data-filter="sim-to-real">Sim-to-Real</button>
+                <button class="filter-btn" data-filter="Behavior Tree">Behavior Tree</button>    
             </div>
 
             <div class="projects-grid">
 
-                <div class="proj-card" data-tags="navigation planning">
+                <div class="proj-card" data-tags="navigation planning Behavior Tree">
                     <div class="proj-header">
-                        <span class="proj-tag">Navigation · Planning</span>
+                        <span class="proj-tag">Navigation · Planning · Behavior Tree</span>
                         <span class="proj-year">September 2024 – Present</span>
                     </div>
-                    <h3>Local Planning for Service Robots</h3>
-                    <p>Developed and integrated local planning algorithms into a navigation architecture for service robots.</p>
-                    <p>Released multiple versions supporting both circular and square robot footprints deployed in restaurant environments.</p>
-                    <p>Supporting for a multi-robot framework.</p>
+                    <h3>Local Planning & Behavior Trees for Service Robots</h3>
+                    <p>Developed and integrated local planning algorithms (sampling- and search-based methods) into a service robot navigation architecture deployed in restaurant environments. Released multiple versions supporting both circular and square robot footprints.</p>
+                    <p>Implemented full autonomous navigation using Navigation2 with MPPI controller, achieving smooth and reliable path execution on real hardware.</p>
+                    <p>Designed Behavior Tree-based robot behaviors to handle complex real-world scenarios, including waiting logic for narrow-path traversal in multi-robot deployments. Reduced computation cost on SBCs by 30%.</p>
+                    <div class="proj-videos">
+                        <div class="local-video-wrap">
+                            <video controls muted playsinline>
+                                <source src="rgt_project/full_autonomous_navigation_2026-04-10.webm" type="video/webm">
+                            </video>
+                            <span class="video-caption">Nav2 + MPPI Controller — Full Autonomous Navigation</span>
+                        </div>
+                        <div class="local-video-wrap">
+                            <video controls muted playsinline>
+                                <source src="rgt_project/wait_place.webm" type="video/webm">
+                            </video>
+                            <span class="video-caption">Behavior Tree — Wait Place in Narrow Path</span>
+                        </div>
+                    </div>
                     <div class="proj-links">
                         <a href="https://rgt.kr/" target="_blank"><i class="fas fa-globe"></i> RGT Company</a>
                         <a href="https://github.com/Manh-RGT" target="_blank"><i class="fab fa-github"></i> GitHub</a>
@@ -297,6 +313,14 @@
                 <h2>News &amp; Achievements</h2>
             </div>
             <div class="news-list">
+
+                <div class="news-item">
+                    <div class="news-date">2024</div>
+                    <div class="news-body">
+                        <h4>🏆 Best Paper Award — Journal of Korea Robotics Society</h4>
+                        <p>"Mapless Navigation with Distributional Reinforcement Learning" received the Best Paper Award from the Journal of Korea Robotics Society, Korea, 2024.</p>
+                    </div>
+                </div>
 
                 <div class="news-item">
                     <div class="news-date">2024</div>
@@ -398,6 +422,12 @@
                     <li>
                         Cuong Ng.M, <strong>Manh T.V.</strong>, Duc, D.N., Tung, L.N., Tien, D.P. and Thi, L.T., "Neural network based adaptive control of web transport systems," <em>2019 International Conference on System Science and Engineering (ICSSE)</em>, pp. 124–128. IEEE, 2019.
                     </li>
+                    <li>
+                        Ha Thi Kim Duyen, <strong>Van Manh Tran</strong> et al., "Autonomous Navigation for Omnidirectional Robot Based on Deep Reinforcement Learning," <em>International Journal of Mechanical Engineering and Robotics Research</em>, 2020. (Co-author)
+                    </li>
+                    <li>
+                        <strong>Van Manh Tran</strong> et al., "Mapping and Navigation with Four-Wheeled Omnidirectional Mobile Robot Based on Robot Operating System," <em>2019 International Conference on Mechatronics, Robotics and Systems Engineering (MoRSE)</em>, Bali, Indonesia, 2019. (Co-author)
+                    </li>
                 </ol>
                 <a href="https://scholar.google.com/citations?user=ssog4ZUAAAAJ&hl=en" target="_blank" class="btn btn-outline btn-sm"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
             </div>
@@ -435,7 +465,7 @@
 
     <footer>
         <div class="container">
-            <p>© 2024 Tran Van Manh. All rights reserved.</p>
+            <p>© 2026 Tran Van Manh. All rights reserved.</p>
         </div>
     </footer>
 
