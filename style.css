@@ -459,6 +459,19 @@ a:hover { color: var(--accent-light); text-decoration: underline; }
     text-align: center;
     font-style: italic;
 }
+.video-yt-link {
+    font-size: 0.78rem;
+    color: #ff4444;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+}
+.video-yt-link:hover {
+    text-decoration: underline;
+}
 .proj-images {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
