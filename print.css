@@ -1,15 +1,16 @@
 /* ============================================
    PRINT STYLESHEET — A4 Landscape PDF
    Tran Van Manh Portfolio
-   Page layout:
-     p1  → Who am I? (About)
-     p2  → Background (Resume)
-     p3  → Work header + 1st project (Nav·Planning·BT)
-     p4  → Deep RL · Navigation
-     p5  → Navigation · Hardware
-     p6  → Control · Hardware
-     p7  → Navigation · Hardware · AI
-     p8+ → Highlights / News
+
+   Page map:
+     p1  → Who am I?  (#about)
+     p2  → Background (#resume)
+     p3  → Work header + Local Planning & Behavior Trees
+     p4  → ATC-Mapless Navigation
+     p5  → KIST Sub-project — Industrial AMR
+     p6  → PMSM Motor Optimization
+     p7  → IVASTBot — Smart Human-Form Robot
+     p8  → Achievements / News
 ============================================ */
 
 @media print {
@@ -82,20 +83,22 @@
 
     /* ═══════════════════════════════════════
        PAGE BREAKS
-       Each major section starts a new page.
-       Inside Projects, every card after the
-       first also starts a new page.
+       p1 → #about   (first printed section)
+       p2 → #resume
+       p3 → #projects + first proj-card (share the page)
+       p4–p7 → each subsequent proj-card
+       p8 → #news
     ═══════════════════════════════════════ */
     #about    { break-before: page; }
     #resume   { break-before: page; }
     #projects { break-before: page; }
 
-    /* page break before every proj-card except the first */
+    /* every proj-card after the first starts a new page */
     .proj-card + .proj-card { break-before: page; }
 
     #news { break-before: page; }
 
-    /* keep these intact (no split across pages) */
+    /* keep these intact — no split across pages */
     .proj-card,
     .news-item,
     .tl-item,
@@ -139,6 +142,13 @@
         border-radius: 8px !important;
         padding: 1.1rem 1.4rem !important;
         gap: 0.55rem !important;
+    }
+    .proj-tasks {
+        margin: 0.3rem 0 !important;
+        padding-left: 1.2rem !important;
+    }
+    .proj-tasks li {
+        margin-bottom: 0.2rem !important;
     }
     .proj-images {
         grid-template-columns: repeat(3, 1fr) !important;
