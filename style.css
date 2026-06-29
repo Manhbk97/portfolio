@@ -437,7 +437,7 @@ a:hover { color: var(--accent-light); text-decoration: underline; }
     margin-bottom: 0.5rem;
 }
 .proj-img-video-row img {
-    flex: 2;
+    flex: 1;
     min-width: 0;
     border-radius: 6px;
     object-fit: contain;
