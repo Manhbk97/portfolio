@@ -224,7 +224,7 @@
         border-radius: 4px !important;
     }
     .print-hide { display: none !important; }
-    .pmsm-images img { max-height: 315px !important; }
+    .pmsm-images img { max-height: 351px !important; }
     .atc-images {
         grid-template-columns: repeat(2, 45%) !important;
         justify-content: center !important;
@@ -250,7 +250,7 @@
         justify-content: center !important;
     }
     .ivasbot-videos {
-        grid-template-columns: repeat(2, 40%) !important;
+        grid-template-columns: repeat(2, 35%) !important;
         justify-content: center !important;
     }
 
