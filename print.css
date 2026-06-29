@@ -259,8 +259,8 @@
     .news-item  { padding: 0.75rem 1.1rem !important; }
 
     .conf-section { padding: 1.25rem !important; margin-bottom: 1rem !important; }
-    .conf-gallery { grid-template-columns: repeat(4, 1fr) !important; gap: 0.6rem !important; }
-    .conf-img-wrap img { max-height: 140px !important; object-fit: cover !important; }
+    .conf-gallery { grid-template-columns: repeat(2, 1fr) !important; gap: 0.6rem !important; }
+    .conf-img-wrap img { max-height: 210px !important; object-fit: cover !important; }
 
     .pubs-section { padding: 1.25rem !important; }
     .pubs-list { gap: 0.6rem !important; }
