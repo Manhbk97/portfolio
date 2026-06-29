@@ -250,7 +250,7 @@
         justify-content: center !important;
     }
     .ivasbot-videos {
-        grid-template-columns: repeat(2, 45%) !important;
+        grid-template-columns: repeat(2, 40%) !important;
         justify-content: center !important;
     }
 
