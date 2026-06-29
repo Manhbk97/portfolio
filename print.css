@@ -229,6 +229,11 @@
     }
     .kist-images img {
         width: 100% !important;
+        max-height: 252px !important;
+    }
+    .kist-videos {
+        grid-template-columns: repeat(2, 40%) !important;
+        justify-content: center !important;
     }
 
     /* ── NEWS / HIGHLIGHTS ── */
