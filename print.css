@@ -224,6 +224,7 @@
         border-radius: 4px !important;
     }
     .print-hide { display: none !important; }
+    .pmsm-images img { max-height: 315px !important; }
     .atc-images {
         grid-template-columns: repeat(2, 1fr) !important;
     }
