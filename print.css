@@ -223,6 +223,13 @@
         aspect-ratio: auto !important;
         border-radius: 4px !important;
     }
+    .kist-images {
+        grid-template-columns: repeat(2, 1fr) !important;
+        justify-items: stretch !important;
+    }
+    .kist-images img {
+        width: 100% !important;
+    }
 
     /* ── NEWS / HIGHLIGHTS ── */
     .news-list { gap: 0.65rem !important; margin-bottom: 1.5rem !important; }
