@@ -228,6 +228,13 @@
     .atc-images {
         grid-template-columns: repeat(2, 1fr) !important;
     }
+    .atc-images img {
+        max-height: 252px !important;
+    }
+    .atc-videos {
+        grid-template-columns: repeat(2, 40%) !important;
+        justify-content: center !important;
+    }
 
     .kist-images {
         grid-template-columns: repeat(2, 1fr) !important;
