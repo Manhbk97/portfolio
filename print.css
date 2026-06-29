@@ -1,0 +1,163 @@
+/* ============================================
+   PRINT STYLESHEET — A4 Landscape PDF
+   Tran Van Manh Portfolio
+   Page layout:
+     p1  → Who am I? (About)
+     p2  → Background (Resume)
+     p3  → Work header + 1st project (Nav·Planning·BT)
+     p4  → Deep RL · Navigation
+     p5  → Navigation · Hardware
+     p6  → Control · Hardware
+     p7  → Navigation · Hardware · AI
+     p8+ → Highlights / News
+============================================ */
+
+@media print {
+
+    /* ── PAGE FORMAT ── */
+    @page {
+        size: A4 landscape;
+        margin: 1.4cm 2cm;
+    }
+
+    /* force colors & backgrounds through */
+    * {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }
+
+    /* ── HIDE NON-PRINT ELEMENTS ── */
+    #navbar,
+    #hero,
+    #contact,
+    footer,
+    .scroll-down,
+    .filter-bar,
+    .nav-toggle,
+    .proj-videos,
+    .video-yt-link,
+    .btn {
+        display: none !important;
+    }
+
+    /* ── RESET ANIMATION / EFFECTS ── */
+    * {
+        box-shadow: none !important;
+        text-shadow: none !important;
+        animation: none !important;
+        transition: none !important;
+        transform: none !important;
+    }
+    .fade-in { opacity: 1 !important; }
+
+    /* ── BASE ── */
+    body {
+        background: #fff !important;
+        color: #1a1a1a !important;
+        font-size: 11.5px;
+        line-height: 1.55;
+    }
+
+    .container {
+        width: 100% !important;
+        max-width: none !important;
+        padding: 0 !important;
+    }
+
+    a {
+        color: #13375c !important;
+        text-decoration: none !important;
+    }
+
+    /* ── SECTION PADDING ── */
+    .section {
+        padding: 0.8rem 0 1rem !important;
+    }
+    .section-alt {
+        background: #f0eeea !important;
+    }
+    .section-header {
+        margin-bottom: 1.25rem !important;
+    }
+
+    /* ═══════════════════════════════════════
+       PAGE BREAKS
+       Each major section starts a new page.
+       Inside Projects, every card after the
+       first also starts a new page.
+    ═══════════════════════════════════════ */
+    #about    { break-before: page; }
+    #resume   { break-before: page; }
+    #projects { break-before: page; }
+
+    /* page break before every proj-card except the first */
+    .proj-card + .proj-card { break-before: page; }
+
+    #news { break-before: page; }
+
+    /* keep these intact (no split across pages) */
+    .proj-card,
+    .news-item,
+    .tl-item,
+    .exp-card,
+    .pubs-section,
+    .conf-section { break-inside: avoid; }
+
+    /* ── ABOUT SECTION ── */
+    .about-grid {
+        grid-template-columns: 1fr 1fr !important;
+        gap: 2rem !important;
+        margin-bottom: 2rem !important;
+    }
+    .expertise-cards {
+        grid-template-columns: 1fr 1fr !important;
+    }
+    .exp-card {
+        padding: 0.85rem !important;
+    }
+    .stats-row {
+        grid-template-columns: repeat(4, 1fr) !important;
+        padding: 1rem 1.5rem !important;
+        gap: 1rem !important;
+    }
+    .stat-num { font-size: 2rem !important; }
+
+    /* ── RESUME / BACKGROUND ── */
+    .resume-grid {
+        grid-template-columns: 1fr 1fr !important;
+        gap: 2.5rem !important;
+    }
+    .tl-dot { border-color: #f0eeea !important; }
+
+    /* ── PROJECTS ── */
+    .projects-grid {
+        grid-template-columns: 1fr !important;
+        gap: 0 !important;
+    }
+    .proj-card {
+        border: 1px solid #e0ddd8 !important;
+        border-radius: 8px !important;
+        padding: 1.1rem 1.4rem !important;
+        gap: 0.55rem !important;
+    }
+    .proj-images {
+        grid-template-columns: repeat(3, 1fr) !important;
+        gap: 0.5rem !important;
+    }
+    .proj-images img {
+        max-height: 130px;
+        object-fit: contain !important;
+        aspect-ratio: auto !important;
+    }
+
+    /* ── NEWS / HIGHLIGHTS ── */
+    .news-list { gap: 0.65rem !important; margin-bottom: 1.5rem !important; }
+    .news-item  { padding: 0.75rem 1.1rem !important; }
+
+    .conf-section { padding: 1.25rem !important; margin-bottom: 1rem !important; }
+    .conf-gallery { grid-template-columns: repeat(4, 1fr) !important; gap: 0.5rem !important; }
+    .conf-img-wrap img { max-height: 90px; }
+
+    .pubs-section { padding: 1.25rem !important; }
+    .pubs-list { gap: 0.6rem !important; }
+}
