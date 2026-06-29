@@ -451,11 +451,14 @@ a:hover { color: var(--accent-light); text-decoration: underline; }
     grid-template-columns: 1fr 1fr 1fr;
     gap: 0.5rem;
 }
-.proj-videos iframe {
+.proj-videos iframe,
+.proj-videos video {
     width: 100%;
     aspect-ratio: 16/9;
     border: none;
     border-radius: 6px;
+    background: #000;
+    object-fit: contain;
 }
 .shorts-wrap iframe {
     aspect-ratio: 9/16;
