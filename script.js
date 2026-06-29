@@ -74,6 +74,16 @@ document.querySelectorAll('.proj-card, .news-item, .exp-card, .contact-card, .tl
 const statsRow = document.querySelector('.stats-row');
 if (statsRow) observer.observe(statsRow);
 
+/* ─── PRINT: resolve counters & show hidden cards ── */
+window.addEventListener('beforeprint', () => {
+    document.querySelectorAll('.stat-num').forEach(el => {
+        el.textContent = el.dataset.target;
+    });
+    document.querySelectorAll('.proj-card.hidden').forEach(el => {
+        el.style.display = '';
+    });
+});
+
 /* ─── PROJECT FILTER ─────────────────────────── */
 document.querySelectorAll('.filter-btn').forEach(btn => {
     btn.addEventListener('click', () => {

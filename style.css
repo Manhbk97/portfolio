@@ -746,3 +746,95 @@ footer {
     .news-item { grid-template-columns: 50px 1fr; gap: 1rem; }
     .hero-name { font-size: 2.26rem; }
 }
+
+/* ─── PRINT ──────────────────────────────── */
+@media print {
+    @page { size: A4 landscape; margin: 1cm 1.4cm; }
+
+    /* ── Hide screen-only elements ── */
+    #navbar, #hero, .scroll-down, .filter-btns,
+    .nav-toggle, .hero-btns, .video-yt-link,
+    iframe, video { display: none !important; }
+
+    body { background: #fff; color: #111; font-size: 10pt; }
+    a { color: inherit; text-decoration: none; }
+
+    .container { max-width: 100%; padding: 0; }
+
+    /* ── Each top-level section = 1 page ── */
+    section {
+        padding: 0.5cm 0 0.3cm;
+        break-after: page;
+        page-break-after: always;
+        min-height: 0;
+    }
+    section:last-of-type {
+        break-after: avoid;
+        page-break-after: avoid;
+    }
+
+    /* ── Projects: hide section header; each card = 1 page ── */
+    #projects { break-after: avoid; page-break-after: avoid; padding: 0; }
+    #projects > .container > .section-header,
+    #projects > .container > .filter-btns { display: none; }
+    .projects-grid { display: block; }
+    .proj-card {
+        break-after: page;
+        page-break-after: always;
+        break-inside: avoid;
+        border: none;
+        box-shadow: none;
+        border-radius: 0;
+        padding: 0.5cm 0;
+        transform: none !important;
+    }
+    .proj-card:last-child { break-after: avoid; page-break-after: avoid; }
+
+    /* ── Section headers ── */
+    .section-header { margin-bottom: 0.35cm; }
+    .section-tag { font-size: 7.5pt; }
+    h2 { font-size: 15pt; }
+    h3 { font-size: 11pt; }
+    h4 { font-size: 10pt; }
+
+    /* ── About: compact to fit 1 page ── */
+    .about-grid { gap: 1.5rem; margin-bottom: 1rem; }
+    .about-text p { font-size: 9pt; line-height: 1.35; margin-bottom: 0.4rem; }
+    .personal-info { margin-top: 0.4rem; gap: 0.25rem; }
+    .info-item { font-size: 8.5pt; }
+    .expertise-cards { gap: 0.5rem; }
+    .exp-card { padding: 0.5rem 0.7rem; }
+    .exp-card i { font-size: 1.1rem; margin-bottom: 0.2rem; }
+    .exp-card h4 { font-size: 8.5pt; }
+    .exp-card p { font-size: 8pt; }
+    .stats-row { padding: 0.6rem 1rem; gap: 0.5rem; margin-top: 0.4rem; }
+    .stat-num { font-size: 1.6rem; }
+    .stat-label { font-size: 8pt; }
+
+    /* ── Resume ── */
+    .resume-grid { gap: 1.5rem; }
+    .timeline { gap: 0.4rem; }
+    .tl-item { gap: 0.35rem; padding-bottom: 0.4rem; }
+    .tl-body p { font-size: 8.5pt; line-height: 1.35; }
+    .skills-group { gap: 0.35rem; }
+    .skill-row { gap: 0.25rem; }
+    .skill-tag, .skill-tags span { font-size: 8pt; padding: 2px 6px; }
+
+    /* ── Project cards ── */
+    .proj-card p, .proj-card li { font-size: 8.5pt; line-height: 1.35; }
+    .proj-tasks { font-size: 8.5pt; }
+    .proj-images { gap: 0.4rem; }
+    .proj-images img { max-height: 150px; object-fit: contain; }
+    .proj-videos { display: none; }
+    .proj-links { gap: 0.4rem; }
+    .proj-links a { font-size: 8pt; }
+
+    /* ── News ── */
+    .news-list { gap: 0.5rem; }
+    .news-item { gap: 0.8rem; }
+    .news-body p { font-size: 8.5pt; }
+    .conf-gallery img { max-height: 100px; }
+
+    /* ── Fade-in animations: show everything ── */
+    .fade-in { opacity: 1 !important; transform: none !important; }
+}
