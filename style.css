@@ -491,6 +491,8 @@ a:hover { color: var(--accent-light); text-decoration: underline; }
     justify-content: center;
     gap: 0.3rem;
 }
+.print-thumb { display: none; }
+.print-url   { display: none; }
 .video-yt-link:hover {
     text-decoration: underline;
 }
