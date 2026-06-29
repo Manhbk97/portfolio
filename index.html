@@ -201,15 +201,15 @@
                     </div>
                     <h3>Local Planning & Behavior Trees for Service Robots</h3>
                     <ul>
-                        <li>Developed and optimized local planners (TEB, MPC, and MPPI) in Nav2 for autonomous navigation of service and multi-robot systems, reducing on-board computation cost on edge Linux single-board computers (SBCs) by 30% to ensure real-time performance and stable control-loop timing.</li>
+                        <li>Developed and optimized local planners (TEB, MPC, and MPPI) in Nav2 for autonomous navigation of service and multi-robot systems, reducing on-board computation cost on edge Linux single-board computers (SBCs) by 30% to ensure real-time performance.</li>
                         <li>Implemented full autonomous navigation with Nav2 and designed behavior-tree decision-making with BehaviorTree.CPP for complex scenarios (e.g., narrow-path waiting logic).</li>
-                        <li>Supported the development of multi-floor navigation and docking features for service robots.</li>
+                        <!-- <li>Supported the development of multi-floor navigation and docking features for service robots.</li> -->
                         <li>Developed and maintained the motor controller (emergency-stop logic, robust serial communication, safety handling, battery-voltage filtering and logging); released production software deployed in restaurant environments.</li>
                     </ul>
                     <!-- <div class="proj-images" style="grid-template-columns: 1fr;">
                         <img src="rgt_project/sirbot.png" alt="SirBot — RGT Service Robot" style="object-fit: contain; background: var(--surface); max-width: 50%; margin: 0 auto;">
                     </div> -->
-                    <div class="proj-videos">
+                    <div class="proj-videos" style="grid-template-columns: 1fr 1fr;">
                         <div class="local-video-wrap">
                             <iframe
                                 src="https://www.youtube.com/embed/iTI550zHXjk"
@@ -219,6 +219,16 @@
                             </iframe>
                             <span class="video-caption">Deploy local planner (TEB) in the restaurant environment</span>
                             <a href="https://youtube.com/shorts/jDwvb22xPTs" target="_blank" class="video-yt-link"><i class="fab fa-youtube"></i> Watch on YouTube</a>
+                        </div>
+                        <div class="local-video-wrap">
+                            <iframe
+                                src="https://www.youtube.com/embed/Mk81OxxGKaA"
+                                title="Testing local path planner TEB"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                            <span class="video-caption">Testing local path planner TEB</span>
+                            <a href="https://www.youtube.com/watch?v=Mk81OxxGKaA" target="_blank" class="video-yt-link"><i class="fab fa-youtube"></i> Watch on YouTube</a>
                         </div>
                         <div class="local-video-wrap">
                             <video controls muted playsinline>
