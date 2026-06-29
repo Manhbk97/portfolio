@@ -432,7 +432,7 @@ a:hover { color: var(--accent-light); text-decoration: underline; }
 .proj-card p { font-size: 0.91rem; color: var(--text-muted); line-height: 1.6; }
 .proj-videos {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 0.5rem;
 }
 .proj-videos iframe {
@@ -440,6 +440,9 @@ a:hover { color: var(--accent-light); text-decoration: underline; }
     aspect-ratio: 16/9;
     border: none;
     border-radius: 6px;
+}
+.shorts-wrap iframe {
+    aspect-ratio: 9/16;
 }
 .local-video-wrap {
     display: flex;
