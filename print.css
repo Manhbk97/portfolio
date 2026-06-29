@@ -223,6 +223,11 @@
         aspect-ratio: auto !important;
         border-radius: 4px !important;
     }
+    .print-hide { display: none !important; }
+    .atc-images {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+
     .kist-images {
         grid-template-columns: repeat(2, 1fr) !important;
         justify-items: stretch !important;
