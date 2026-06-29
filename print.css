@@ -226,10 +226,11 @@
     .print-hide { display: none !important; }
     .pmsm-images img { max-height: 315px !important; }
     .atc-images {
-        grid-template-columns: repeat(2, 1fr) !important;
+        grid-template-columns: repeat(2, 45%) !important;
+        justify-content: center !important;
     }
     .atc-images img {
-        max-height: 252px !important;
+        max-height: 239px !important;
     }
     .atc-videos {
         grid-template-columns: repeat(2, 40%) !important;
@@ -246,6 +247,10 @@
     }
     .kist-videos {
         grid-template-columns: repeat(2, 40%) !important;
+        justify-content: center !important;
+    }
+    .ivasbot-videos {
+        grid-template-columns: repeat(2, 45%) !important;
         justify-content: center !important;
     }
 
