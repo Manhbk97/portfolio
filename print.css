@@ -21,6 +21,8 @@
         margin: 1.4cm 2cm;
     }
 
+    html { zoom: 0.9; }
+
     /* force colors & backgrounds through */
     * {
         -webkit-print-color-adjust: exact !important;
