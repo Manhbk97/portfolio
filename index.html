@@ -200,9 +200,12 @@
                         <span class="proj-year">September 2024 – Present</span>
                     </div>
                     <h3>Local Planning & Behavior Trees for Service Robots</h3>
-                    <p>Developed and integrated local planning algorithms (sampling- and search-based methods) into a service robot navigation architecture deployed in restaurant environments. Released multiple versions supporting both circular and square robot footprints.</p>
-                    <p>Implemented full autonomous navigation using Navigation2 with MPPI controller, achieving smooth and reliable path execution on real hardware.</p>
-                    <p>Designed Behavior Tree-based robot behaviors to handle complex real-world scenarios, including waiting logic for narrow-path traversal in multi-robot deployments. Reduced computation cost on SBCs by 30%.</p>
+                    <ul>
+                        <li>Developed and optimized local planners (TEB, MPC, and MPPI) in Nav2 for autonomous navigation of service and multi-robot systems, reducing on-board computation cost on edge Linux single-board computers (SBCs) by 30% to ensure real-time performance and stable control-loop timing.</li>
+                        <li>Implemented full autonomous navigation with Nav2 and designed behavior-tree decision-making with BehaviorTree.CPP for complex scenarios (e.g., narrow-path waiting logic).</li>
+                        <li>Supported the development of multi-floor navigation and docking features for service robots.</li>
+                        <li>Developed and maintained the motor controller (emergency-stop logic, robust serial communication, safety handling, battery-voltage filtering and logging); released production software deployed in restaurant environments.</li>
+                    </ul>
                     <!-- <div class="proj-images" style="grid-template-columns: 1fr;">
                         <img src="rgt_project/sirbot.png" alt="SirBot — RGT Service Robot" style="object-fit: contain; background: var(--surface); max-width: 50%; margin: 0 auto;">
                     </div> -->
