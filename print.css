@@ -151,13 +151,17 @@
         margin-bottom: 0.2rem !important;
     }
     .proj-images {
-        grid-template-columns: repeat(3, 1fr) !important;
-        gap: 0.5rem !important;
+        /* let each card's inline grid-template-columns take effect */
+        gap: 0.6rem !important;
+        align-items: center !important;
+        justify-items: center !important;
     }
     .proj-images img {
-        max-height: 130px;
+        width: 100% !important;
+        max-height: 210px !important;
         object-fit: contain !important;
         aspect-ratio: auto !important;
+        border-radius: 4px !important;
     }
 
     /* ── NEWS / HIGHLIGHTS ── */
@@ -165,8 +169,8 @@
     .news-item  { padding: 0.75rem 1.1rem !important; }
 
     .conf-section { padding: 1.25rem !important; margin-bottom: 1rem !important; }
-    .conf-gallery { grid-template-columns: repeat(4, 1fr) !important; gap: 0.5rem !important; }
-    .conf-img-wrap img { max-height: 90px; }
+    .conf-gallery { grid-template-columns: repeat(4, 1fr) !important; gap: 0.6rem !important; }
+    .conf-img-wrap img { max-height: 140px !important; object-fit: cover !important; }
 
     .pubs-section { padding: 1.25rem !important; }
     .pubs-list { gap: 0.6rem !important; }
