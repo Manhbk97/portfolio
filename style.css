@@ -430,6 +430,22 @@ a:hover { color: var(--accent-light); text-decoration: underline; }
 }
 .proj-card h3 { font-size: 1.06rem; font-weight: 600; color: var(--text); }
 .proj-card p { font-size: 0.91rem; color: var(--text-muted); line-height: 1.6; }
+.proj-img-video-row {
+    display: flex;
+    gap: 0.75rem;
+    align-items: flex-start;
+    margin-bottom: 0.5rem;
+}
+.proj-img-video-row img {
+    flex: 2;
+    min-width: 0;
+    border-radius: 6px;
+    object-fit: contain;
+}
+.proj-img-video-row .local-video-wrap {
+    flex: 1;
+    min-width: 0;
+}
 .proj-videos {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
